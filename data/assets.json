@@ -1,0 +1,122 @@
+[
+  {
+    "asset_id": "AST-1000",
+    "name": "Wuppertal North PM-3",
+    "asset_type": "Point Machine",
+    "manufacturer": "Siemens S700K",
+    "location": "Wuppertal Hbf - Track 3",
+    "depot": "Wuppertal Depot",
+    "install_date": "2015-04-13",
+    "last_inspection": "2026-03-12"
+  },
+  {
+    "asset_id": "AST-1001",
+    "name": "Vohwinkel Yard TC-A",
+    "asset_type": "Track Circuit",
+    "manufacturer": "Siemens FTGS",
+    "location": "Wuppertal Vohwinkel - Yard A",
+    "depot": "Wuppertal Depot",
+    "install_date": "2017-07-03",
+    "last_inspection": "2026-02-05"
+  },
+  {
+    "asset_id": "AST-1002",
+    "name": "Solingen AC-1",
+    "asset_type": "Axle Counter",
+    "manufacturer": "Siemens ACM200",
+    "location": "Solingen Hbf - Track 1",
+    "depot": "Solingen Depot",
+    "install_date": "2022-08-03",
+    "last_inspection": "2026-05-20"
+  },
+  {
+    "asset_id": "AST-1003",
+    "name": "Remscheid PM-2",
+    "asset_type": "Point Machine",
+    "manufacturer": "Siemens S700K",
+    "location": "Remscheid Hbf - Track 2",
+    "depot": "Remscheid Depot",
+    "install_date": "2021-08-15",
+    "last_inspection": "2026-04-19"
+  },
+  {
+    "asset_id": "AST-1004",
+    "name": "Hagen Junction TC-N",
+    "asset_type": "Track Circuit",
+    "manufacturer": "Siemens FTGS",
+    "location": "Hagen Hbf - Junction North",
+    "depot": "Ennepe-Ruhr Depot",
+    "install_date": "2015-05-03",
+    "last_inspection": "2026-01-24"
+  },
+  {
+    "asset_id": "AST-1005",
+    "name": "Schwelm AC-4",
+    "asset_type": "Axle Counter",
+    "manufacturer": "Siemens ACM200",
+    "location": "Schwelm - Track 4",
+    "depot": "Ennepe-Ruhr Depot",
+    "install_date": "2017-08-10",
+    "last_inspection": "2026-05-10"
+  },
+  {
+    "asset_id": "AST-1006",
+    "name": "Velbert Branch PM",
+    "asset_type": "Point Machine",
+    "manufacturer": "Siemens S700K",
+    "location": "Velbert - Branch Line",
+    "depot": "Ennepe-Ruhr Depot",
+    "install_date": "2021-04-17",
+    "last_inspection": "2026-02-20"
+  },
+  {
+    "asset_id": "AST-1007",
+    "name": "Gevelsberg TC-1",
+    "asset_type": "Track Circuit",
+    "manufacturer": "Siemens EBI Track 200",
+    "location": "Gevelsberg - Track 1",
+    "depot": "Ennepe-Ruhr Depot",
+    "install_date": "2017-06-21",
+    "last_inspection": "2026-04-25"
+  },
+  {
+    "asset_id": "AST-1008",
+    "name": "Wuppertal Hbf AC-3",
+    "asset_type": "Axle Counter",
+    "manufacturer": "Siemens ECM2000",
+    "location": "Wuppertal Hbf - Track 3",
+    "depot": "Wuppertal Depot",
+    "install_date": "2015-01-27",
+    "last_inspection": "2026-02-10"
+  },
+  {
+    "asset_id": "AST-1009",
+    "name": "Vohwinkel Yard PM-A",
+    "asset_type": "Point Machine",
+    "manufacturer": "Siemens Hi-Motion",
+    "location": "Wuppertal Vohwinkel - Yard A",
+    "depot": "Wuppertal Depot",
+    "install_date": "2018-10-25",
+    "last_inspection": "2026-03-13"
+  },
+  {
+    "asset_id": "AST-1010",
+    "name": "Solingen TC-1B",
+    "asset_type": "Track Circuit",
+    "manufacturer": "Siemens FTGS",
+    "location": "Solingen Hbf - Track 1",
+    "depot": "Solingen Depot",
+    "install_date": "2017-05-31",
+    "last_inspection": "2026-03-28"
+  },
+  {
+    "asset_id": "AST-1011",
+    "name": "Remscheid AC-2",
+    "asset_type": "Axle Counter",
+    "manufacturer": "Siemens ACM200",
+    "location": "Remscheid Hbf - Track 2",
+    "depot": "Remscheid Depot",
+    "install_date": "2016-01-15",
+    "last_inspection": "2026-04-08"
+  }
+]

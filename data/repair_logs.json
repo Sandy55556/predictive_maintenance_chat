@@ -1,0 +1,42 @@
+[
+  {
+    "log_id": "RL-2031",
+    "asset_id": "AST-1006",
+    "asset_type": "Point Machine",
+    "date": "2026-03-12",
+    "issue": "Switching time exceeded 6.5s during cold weather",
+    "action_taken": "Inspected gearbox lubrication, found hardened grease, re-lubricated with LF-200 per Manual MAN-PM-004",
+    "technician": "T. Hoffmann",
+    "resolution_minutes": 85
+  },
+  {
+    "log_id": "RL-2032",
+    "asset_id": "AST-1004",
+    "asset_type": "Track Circuit",
+    "date": "2026-04-02",
+    "issue": "Receiver voltage drifted to 1.4V over 3 weeks",
+    "action_taken": "Replaced insulated joint, resistance restored to 1.3 megaohm",
+    "technician": "S. Becker",
+    "resolution_minutes": 130
+  },
+  {
+    "log_id": "RL-2033",
+    "asset_id": "AST-1009",
+    "asset_type": "Axle Counter",
+    "date": "2026-02-18",
+    "issue": "Intermittent count discrepancy alarms",
+    "action_taken": "Found moisture in junction box, dried and resealed; no further alarms after 2 weeks monitoring",
+    "technician": "T. Hoffmann",
+    "resolution_minutes": 70
+  },
+  {
+    "log_id": "RL-2034",
+    "asset_id": "AST-1000",
+    "asset_type": "Point Machine",
+    "date": "2025-11-22",
+    "issue": "Motor current trending up, gearbox bearing found worn at inspection",
+    "action_taken": "Replaced gearbox bearing kit, current returned to baseline 2.3A",
+    "technician": "M. Klein",
+    "resolution_minutes": 95
+  }
+]

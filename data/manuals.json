@@ -1,0 +1,58 @@
+[
+  {
+    "doc_id": "MAN-PM-001",
+    "asset_type": "Point Machine",
+    "title": "Siemens S700K - Switch Blade Adjustment Procedure",
+    "language": "EN",
+    "content": "Section 4.2: Switch Blade Gap Adjustment. The maximum permissible gap between the switch blade and stock rail is 4mm under load. If the gap exceeds this value, the point machine drive rod must be inspected for wear. Loosen the locking nut on the drive rod (torque spec: 45 Nm), adjust the rod length using the turnbuckle, and re-torque. Verify gap with a feeler gauge at three points along the blade. A gap exceeding 4mm can cause derailment risk and must be treated as a Priority 1 defect."
+  },
+  {
+    "doc_id": "MAN-PM-002",
+    "asset_type": "Point Machine",
+    "title": "Siemens S700K - Motor Current Draw Diagnostics",
+    "language": "EN",
+    "content": "Section 6.1: Normal Operating Current. Under normal conditions, the S700K drive motor draws 2.1 to 2.8 amps during a switch operation, with a peak inrush current of up to 4.5 amps for the first 150ms. Sustained current draw above 3.5 amps for more than 500ms indicates excessive mechanical resistance, typically caused by debris in the switch bed, ice buildup, or a failing gearbox bearing. Section 6.2: If current draw trends upward over multiple operations (more than 15% increase week over week), schedule a gearbox lubrication and bearing inspection within 7 days."
+  },
+  {
+    "doc_id": "MAN-PM-003",
+    "asset_type": "Point Machine",
+    "title": "Siemens S700K - Switching Time Specifications",
+    "language": "EN",
+    "content": "Section 3.4: Switching Time Tolerances. The S700K point machine completes a full switch operation (lock to lock) in 4.0 to 5.5 seconds under normal ambient conditions (-10C to 40C). Switching times exceeding 6.5 seconds indicate mechanical resistance and require immediate inspection. Switching times below 3.5 seconds may indicate a locking mechanism fault and the asset must be taken out of service until inspected, as this can result in failure to fully lock the switch blades."
+  },
+  {
+    "doc_id": "MAN-TC-001",
+    "asset_type": "Track Circuit",
+    "title": "Siemens FTGS - Insulated Joint Inspection",
+    "language": "EN",
+    "content": "Section 2.3: Insulated Rail Joint (IRJ) Resistance. The minimum acceptable insulation resistance for an IRJ is 1 megaohm when dry and 0.5 megaohm in wet conditions. Readings below this threshold indicate joint contamination or physical damage to the insulation material. A failing IRJ can cause false track circuit occupancy or, in severe cases, loss of train detection. Replacement of the insulation material should be scheduled within 14 days of a sub-threshold reading; readings below 0.1 megaohm require replacement within 48 hours."
+  },
+  {
+    "doc_id": "MAN-TC-002",
+    "asset_type": "Track Circuit",
+    "title": "Siemens FTGS - Receiver Voltage Thresholds",
+    "language": "EN",
+    "content": "Section 5.1: Receiver Input Voltage. Normal receiver input voltage for the FTGS track circuit ranges from 1.8V to 2.4V when the track is unoccupied. A gradual decline in receiver voltage over several weeks (more than 0.1V per week) typically indicates rising ballast resistance issues, often due to vegetation growth or ballast contamination. Voltage drops below 1.2V will trigger a false occupancy signal and must be investigated immediately, including a visual ballast inspection."
+  },
+  {
+    "doc_id": "MAN-AC-001",
+    "asset_type": "Axle Counter",
+    "title": "Siemens ACM200 - Sensor Head Alignment",
+    "language": "EN",
+    "content": "Section 3.1: Sensor Head Alignment Tolerance. The ACM200 wheel sensor head must be aligned within 2mm of the rail running surface centerline and at a height of 25mm to 32mm above the rail foot. Misalignment beyond these tolerances can cause missed axle counts or double-counting. Section 3.2: Vibration Sensitivity. The sensor includes an internal vibration dampener rated for normal traffic vibration. Vibration readings sustained above 4.5g may indicate a loosening sensor bracket and require torque-check of the M10 mounting bolts (spec: 25 Nm)."
+  },
+  {
+    "doc_id": "MAN-AC-002",
+    "asset_type": "Axle Counter",
+    "title": "Siemens ACM200 - Count Discrepancy Troubleshooting",
+    "language": "EN",
+    "content": "Section 7.2: Count Discrepancy Resolution. If the axle counter reports a count discrepancy alarm, first verify the sensor head alignment per Section 3.1. If alignment is within tolerance, check for moisture ingress in the junction box, which can cause intermittent signal noise. Persistent count discrepancies after these checks require a sensor head replacement. Do not reset the section counter to clear a discrepancy without confirming no train is occupying the section, as this can mask a genuine occupancy and create a serious safety hazard."
+  },
+  {
+    "doc_id": "MAN-PM-004",
+    "asset_type": "Point Machine",
+    "title": "Siemens S700K - Wartung der Weichenantriebe (DE)",
+    "language": "DE",
+    "content": "Abschnitt 4.5: Schmierung der Antriebskomponenten. Die Gleitflaechen des Antriebsgestaenges muessen alle 6 Monate mit dem freigegebenen Schmierfett (Spezifikation Siemens LF-200) behandelt werden. Bei Temperaturen unter -5C kann die Schmierung verhaerten und zu erhoehtem Motorstrom fuehren. Eine Inspektion auf Verhaertung sollte vor dem Winterbetrieb durchgefuehrt werden. Eine unzureichende Schmierung ist eine haeufige Ursache fuer ansteigenden Motorstrom und verlaengerte Schaltzeiten."
+  }
+]

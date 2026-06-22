@@ -1,0 +1,73 @@
+[
+  {
+    "pattern_id": "FP-001",
+    "asset_type": "Point Machine",
+    "name": "Gearbox bearing wear",
+    "signature": "Motor current draw trending upward >15%/week, switching time increasing toward 6s",
+    "recommended_action": "Schedule gearbox lubrication and bearing inspection within 7 days (Manual MAN-PM-002, Sec 6.2)",
+    "estimated_repair_minutes": 90,
+    "spare_parts": [
+      "Gearbox bearing kit (P/N S700K-BRG-04)",
+      "Siemens LF-200 grease cartridge"
+    ]
+  },
+  {
+    "pattern_id": "FP-002",
+    "asset_type": "Point Machine",
+    "name": "Switch blade gap out of tolerance",
+    "signature": "Switching time intermittently exceeds 6.5s, current spikes irregular",
+    "recommended_action": "Inspect and adjust switch blade gap per Manual MAN-PM-001, Sec 4.2. Priority 1 if gap >4mm.",
+    "estimated_repair_minutes": 60,
+    "spare_parts": [
+      "Drive rod turnbuckle assembly",
+      "Feeler gauge set (calibration check)"
+    ]
+  },
+  {
+    "pattern_id": "FP-003",
+    "asset_type": "Track Circuit",
+    "name": "Insulated joint degradation",
+    "signature": "Receiver voltage declining gradually >0.1V/week, IRJ resistance below 1 megaohm",
+    "recommended_action": "Schedule IRJ insulation replacement within 14 days (Manual MAN-TC-001, Sec 2.3)",
+    "estimated_repair_minutes": 120,
+    "spare_parts": [
+      "Insulated joint kit - composite",
+      "End post insulation set"
+    ]
+  },
+  {
+    "pattern_id": "FP-004",
+    "asset_type": "Track Circuit",
+    "name": "Ballast contamination / vegetation",
+    "signature": "Receiver voltage below 1.2V, sudden drop rather than gradual decline",
+    "recommended_action": "Immediate visual ballast inspection and vegetation clearance (Manual MAN-TC-002, Sec 5.1)",
+    "estimated_repair_minutes": 180,
+    "spare_parts": [
+      "Ballast cleaning equipment (no parts required)"
+    ]
+  },
+  {
+    "pattern_id": "FP-005",
+    "asset_type": "Axle Counter",
+    "name": "Sensor bracket loosening",
+    "signature": "Vibration readings sustained above 4.5g, occasional count discrepancy alarms",
+    "recommended_action": "Torque-check M10 mounting bolts to 25 Nm and re-verify alignment (Manual MAN-AC-001, Sec 3.2)",
+    "estimated_repair_minutes": 45,
+    "spare_parts": [
+      "M10 bolt set (stainless)",
+      "Alignment gauge"
+    ]
+  },
+  {
+    "pattern_id": "FP-006",
+    "asset_type": "Axle Counter",
+    "name": "Junction box moisture ingress",
+    "signature": "Intermittent count discrepancy alarms, alignment within tolerance",
+    "recommended_action": "Inspect junction box for moisture, dry and reseal; replace sensor head if discrepancies persist (Manual MAN-AC-002, Sec 7.2)",
+    "estimated_repair_minutes": 75,
+    "spare_parts": [
+      "Junction box seal kit",
+      "Sensor head (ACM200) - contingency"
+    ]
+  }
+]

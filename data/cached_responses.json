@@ -1,0 +1,80 @@
+[
+  {
+    "question": "What is the maximum allowed switch blade gap?",
+    "keywords": ["switch", "blade", "gap", "maximum", "allowed", "tolerance", "rail", "4mm"],
+    "asset_type": "Point Machine",
+    "answer": "**[Cached · MAN-PM-001, Sec 4.2]**\n\nThe maximum permissible gap between the switch blade and stock rail is **4 mm under load**.\n\n**Procedure if gap exceeds tolerance:**\n1. Loosen the locking nut on the drive rod — torque spec **45 Nm**\n2. Adjust rod length using the turnbuckle\n3. Re-torque and verify gap at **three points** along the blade with a feeler gauge\n\n> ⚠ A gap exceeding 4 mm is a **Priority 1 defect** and must be treated as an immediate safety risk. Do not allow traffic until corrected."
+  },
+  {
+    "question": "What torque should I use on the sensor bracket bolts?",
+    "keywords": ["torque", "sensor", "bracket", "bolt", "mounting", "M10", "25", "Nm", "tighten"],
+    "asset_type": "Axle Counter",
+    "answer": "**[Cached · MAN-AC-001, Sec 3.2]**\n\nThe M10 mounting bolts on the axle counter sensor bracket must be torqued to **25 Nm**.\n\n**Important notes:**\n- Use a calibrated torque wrench — under-torquing is the leading cause of bracket loosening and count discrepancy alarms\n- After torquing, re-verify sensor alignment using the alignment gauge\n- Recheck torque after the first 500 axle passes following any reinstallation\n\nIf vibration readings remain above 4.5 g after re-torquing, inspect the mounting surface for corrosion or deformation before assuming the bracket is secure."
+  },
+  {
+    "question": "Was ist die normale Betriebsspannung des Empfaengers?",
+    "keywords": ["betriebsspannung", "empfaenger", "normale", "spannung", "volt", "operating", "voltage", "receiver", "normal"],
+    "asset_type": "Track Circuit",
+    "answer": "**[Zwischengespeichert · MAN-TC-001, Abschn. 2.1]**\n\nDie normale Betriebsspannung des Empfängers beträgt **1,8 V bis 2,4 V**.\n\n**Grenzwerte:**\n- Unter **1,2 V**: Sofortiger Alarm — Streckenabschnitt als belegt melden\n- **1,2 V – 1,5 V**: Überwachungszone — tägliche Prüfung erforderlich\n- Über **2,4 V**: Prüfen auf Kurzschluss im Sender\n\nEin allmählicher Rückgang (> 0,1 V/Woche) ist ein Frühindikator für IRJ-Isolierungsverschleiß. Planen Sie einen Austausch, bevor der Schwellenwert unterschritten wird."
+  },
+  {
+    "question": "How do I inspect the gearbox for bearing wear?",
+    "keywords": ["gearbox", "bearing", "wear", "inspect", "inspection", "lubrication", "grease", "motor", "current"],
+    "asset_type": "Point Machine",
+    "answer": "**[Cached · MAN-PM-002, Sec 6.2]**\n\n**Gearbox bearing inspection procedure:**\n\n1. **Before opening**: Record current motor current draw at rest and during switching. A draw >15% above baseline indicates bearing wear\n2. Remove the gearbox cover (4× M8 bolts, 20 Nm)\n3. Inspect bearings visually for pitting, discolouration, or metal particles in the grease\n4. Check bearing play — axial play must not exceed **0.15 mm**\n5. If bearings are serviceable: clean with approved solvent and repack with **Siemens LF-200 grease** (cartridge P/N LF200-50G)\n6. If bearings show wear: replace full bearing kit (P/N S700K-BRG-04)\n7. Re-check switching time after reassembly — must be ≤ 6.0 s under load\n\nEstimated time: **90 minutes**. Requires two technicians for reassembly."
+  },
+  {
+    "question": "What are the steps to replace an insulated rail joint?",
+    "keywords": ["insulated", "joint", "IRJ", "replace", "replacement", "resistance", "megaohm", "insulation", "end", "post"],
+    "asset_type": "Track Circuit",
+    "answer": "**[Cached · MAN-TC-001, Sec 2.3]**\n\n**IRJ replacement procedure:**\n\n1. Obtain possession and isolate the track circuit\n2. Verify IRJ resistance is below threshold using a 500 V megger — replacement is mandatory if resistance < **1 MΩ**\n3. Remove fishplates and extract the degraded joint kit\n4. Clean rail ends with wire brush — remove all corrosion and contamination\n5. Install new composite IRJ kit (include end post insulation set)\n6. Torque fishplate bolts to **180 Nm** in alternating sequence\n7. Re-test resistance — must read > **2 MΩ** before returning to service\n8. Monitor receiver voltage for 24 hours post-installation\n\n**Estimated time: 120 minutes.** Do not reuse old end post insulators even if they appear undamaged."
+  },
+  {
+    "question": "How do I check and fix ballast contamination?",
+    "keywords": ["ballast", "contamination", "vegetation", "fouling", "voltage", "drop", "clearance", "visual", "inspection"],
+    "asset_type": "Track Circuit",
+    "answer": "**[Cached · MAN-TC-002, Sec 5.1]**\n\nBallast contamination is indicated by a **sudden** voltage drop (rather than gradual decline) — receiver voltage typically falls below 1.2 V within days.\n\n**On-site inspection steps:**\n1. Walk the full track circuit section and visually inspect ballast condition\n2. Look for: mud/clay intrusion, vegetation root growth, standing water, or crushed ballast compaction\n3. Clear vegetation within **500 mm** of both rails along the full section\n4. If mud contamination is found: arrange ballast cleaning machine — manual clearance alone is insufficient\n5. After clearance, recheck receiver voltage — should recover to nominal within **2–4 hours**\n\nIf voltage does not recover after clearance, suspect a concurrent IRJ issue — measure IRJ resistance before closing possession."
+  },
+  {
+    "question": "How do I resolve junction box moisture ingress?",
+    "keywords": ["junction", "box", "moisture", "ingress", "seal", "water", "damp", "reseal", "dry", "humidity"],
+    "asset_type": "Axle Counter",
+    "answer": "**[Cached · MAN-AC-002, Sec 7.2]**\n\n**Moisture ingress procedure:**\n\n1. Power down the axle counter head before opening the junction box\n2. Open box and inspect for visible moisture, condensation, or corrosion on terminals\n3. If moisture is present: dry thoroughly using compressed air (max 2 bar) — do **not** use heat guns near electronics\n4. Inspect the box seal gasket — replace if compressed, cracked, or brittle (use junction box seal kit)\n5. Check cable gland entry points for cracks or improper seating — re-seat or replace glands as needed\n6. Reassemble and apply IP67 silicone sealant around the lid perimeter\n7. Power up and monitor for count discrepancy alarms over the next **48 hours**\n\nIf alarms persist after resealing, the sensor head may have been damaged by moisture — replace sensor head (ACM200) as contingency."
+  },
+  {
+    "question": "What is the normal switching time for a point machine?",
+    "keywords": ["switching", "time", "normal", "seconds", "duration", "operation", "speed", "point", "machine"],
+    "asset_type": "Point Machine",
+    "answer": "**[Cached · MAN-PM-003, Sec 3.1]**\n\n**Switching time specifications (S700K under normal operating conditions):**\n\n| Condition | Target | Alert threshold | Fault threshold |\n|---|---|---|---|\n| Normal operation | 3.5 – 5.0 s | > 5.5 s | > 6.0 s |\n| Cold weather (< −5 °C) | 4.0 – 5.5 s | > 6.0 s | > 6.5 s |\n\n- Switching times trending upward over consecutive weeks indicate **gearbox wear or lubrication depletion**\n- Irregular times with current spikes suggest **mechanical obstruction or blade gap issues**\n- Consistent times above 6.0 s must be raised as a **defect** before the next service"
+  },
+  {
+    "question": "What is the axle counter alignment procedure?",
+    "keywords": ["alignment", "axle", "counter", "procedure", "calibrate", "position", "rail", "head", "gauge"],
+    "asset_type": "Axle Counter",
+    "answer": "**[Cached · MAN-AC-001, Sec 3.1]**\n\n**Axle counter sensor alignment procedure:**\n\n1. Position the sensor head centrally over the rail web — horizontal offset must be < **± 2 mm** from rail centreline\n2. Set vertical gap between sensor face and rail top: **12 mm ± 1 mm** (use the supplied alignment gauge)\n3. Ensure sensor axis is perpendicular to rail — angular deviation must not exceed **± 1°**\n4. Torque M10 bracket bolts to **25 Nm** after final alignment (see MAN-AC-001, Sec 3.2)\n5. Perform a test count with a maintenance vehicle — count must match expected axle number exactly\n6. Log alignment values in the on-site maintenance register\n\nMisalignment is the primary cause of intermittent count discrepancy alarms. Re-verify alignment any time the bracket has been disturbed."
+  },
+  {
+    "question": "What spare parts should I carry for a point machine callout?",
+    "keywords": ["spare", "parts", "carry", "stock", "callout", "point", "machine", "kit", "inventory"],
+    "asset_type": "Point Machine",
+    "answer": "**[Cached — recommended field kit for Point Machine callouts]**\n\n**Consumables (always carry):**\n- Siemens LF-200 grease cartridge\n- Drive rod locking nut (M16, stainless)\n- Feeler gauge set (0.5–5 mm)\n\n**Replacement parts (carry if risk score > 60%):**\n- Gearbox bearing kit — P/N S700K-BRG-04\n- Drive rod turnbuckle assembly\n- M8 gearbox cover bolts (stainless, pack of 8)\n\n**Tooling:**\n- Calibrated torque wrench (range 10–200 Nm)\n- Digital multimeter\n- Switching time test lead set\n\nFor assets flagged with **gearbox wear** patterns, always pre-stage the bearing kit — unplanned sourcing during possession delays average **3.5 hours**."
+  },
+  {
+    "question": "Which assets need attention this week and why?",
+    "keywords": ["assets", "attention", "week", "priority", "urgent", "need", "why", "critical", "action"],
+    "asset_type": "",
+    "answer": "**[Cached — fleet risk snapshot]**\n\nBased on the last risk assessment, **4 assets are in the Red Zone** requiring immediate attention this week:\n\n| Asset | Name | Risk | Days to Failure | Pattern |\n|---|---|---|---|---|\n| AST-1003 | Remscheid PM-2 | 83% | 6 days | Switch blade gap |\n| AST-1005 | Schwelm AC-4 | 81% | 2 days | Moisture ingress |\n| AST-1007 | Gevelsberg TC-1 | 76% | 2 days | Ballast contamination |\n| AST-1000 | Wuppertal North PM-3 | 70% | 11 days | Gearbox bearing wear |\n\n**Immediate actions:**\n- **AST-1005 and AST-1007** have only 2 days to predicted failure — these must be scheduled in the next possession window\n- **AST-1003** requires a Priority 1 switch blade gap inspection before the next service\n- **AST-1000** can be scheduled within 7 days but should not be deferred further\n\nTwo additional assets (AST-1001, AST-1002) are in the **Yellow Zone** at 68% — plan maintenance within 14 days."
+  },
+  {
+    "question": "Which depot has the highest combined risk right now?",
+    "keywords": ["depot", "highest", "combined", "risk", "right", "now", "worst", "fleet", "zone"],
+    "asset_type": "",
+    "answer": "**[Cached — depot risk comparison]**\n\n**Ennepe-Ruhr Depot** currently carries the highest combined fleet risk.\n\n| Depot | Assets | Red Zone | Yellow Zone | Avg Risk |\n|---|---|---|---|---|\n| Ennepe-Ruhr | 4 | 2 (AST-1005, AST-1007) | 0 | 46% |\n| Wuppertal | 4 | 1 (AST-1000) | 1 (AST-1001) | 41% |\n| Remscheid | 2 | 1 (AST-1003) | 0 | 49% |\n| Solingen | 2 | 0 | 1 (AST-1002) | 38% |\n\n**Remscheid** has the highest average risk per asset at 49%, driven by AST-1003 at 83%. However, **Ennepe-Ruhr** has the most critical exposure with two assets within 2 days of predicted failure.\n\nRecommendation: Prioritise Ennepe-Ruhr possession windows this week, then schedule Remscheid within 6 days."
+  },
+  {
+    "question": "What spare parts should I stock up on given current failure patterns?",
+    "keywords": ["spare", "parts", "stock", "stocking", "inventory", "failure", "patterns", "order", "current", "fleet"],
+    "asset_type": "",
+    "answer": "**[Cached — recommended stock based on active failure patterns]**\n\nBased on the 6 currently matched failure patterns across the fleet, the following parts should be stocked or pre-staged:\n\n**High priority (active Red Zone assets):**\n- Gearbox bearing kit — P/N S700K-BRG-04 × 2 (AST-1000, AST-1003)\n- Drive rod turnbuckle assembly × 1 (AST-1003 — switch blade gap)\n- Junction box seal kit × 1 (AST-1005 — moisture ingress)\n- Sensor head ACM200 × 1 (contingency for AST-1005 if seal replacement insufficient)\n- Ballast cleaning equipment reservation (AST-1007 — no parts, but arrange machine)\n\n**Medium priority (Yellow Zone — plan within 14 days):**\n- Insulated joint kit — composite × 1 (AST-1001 — IRJ degradation)\n- End post insulation set × 1 (AST-1001)\n- M10 bolt set (stainless) × 2 packs (AST-1002 — bracket loosening)\n- Alignment gauge × 1 (AST-1002)\n\n**Consumables — always maintain stock:**\n- Siemens LF-200 grease cartridges × 4\n- Feeler gauge sets × 2\n- IP67 silicone sealant tubes × 3"
+  }
+]
