@@ -111,7 +111,7 @@ def get_connection_status() -> tuple[str, str, str]:
 
 
 def is_offline() -> bool:
-    return st.session_state.get("simulate_offline", False) or client is None
+    return st.session_state.get("simulate_offline", False) or get_client() is None
 
 
 def find_cached_response(query: str, asset_type: str = "") -> str | None:
@@ -149,7 +149,7 @@ client = get_client()
 # Semantic retrieval
 # ---------------------------------------------------------------------------
 def _embed_query(query: str) -> np.ndarray:
-    resp = client.embeddings.create(model=EMBED_MODEL, input=[query])
+    resp = get_client().embeddings.create(model=EMBED_MODEL, input=[query])
     vec = np.array(resp.data[0].embedding, dtype=np.float32)
     return vec / (np.linalg.norm(vec) + 1e-10)
 
@@ -273,7 +273,7 @@ def stream_llm(user_message: str, context_block: str, history: list[dict] | None
         "content": f"CONTEXT:\n{context_block}\n\nTECHNICIAN QUESTION:\n{user_message}",
     })
 
-    stream = client.chat.completions.create(
+    stream = get_client().chat.completions.create(
         model=CHAT_MODEL,
         max_tokens=1024,
         messages=messages,
@@ -296,7 +296,7 @@ def call_llm(user_message: str, context_block: str, asset_type: str = "", lang: 
         {"role": "system", "content": _build_system_prompt(lang)},
         {"role": "user", "content": f"CONTEXT:\n{context_block}\n\nTECHNICIAN QUESTION:\n{user_message}"},
     ]
-    resp = client.chat.completions.create(model=CHAT_MODEL, max_tokens=1024, messages=messages)
+    resp = get_client().chat.completions.create(model=CHAT_MODEL, max_tokens=1024, messages=messages)
     return resp.choices[0].message.content
 
 
@@ -317,6 +317,7 @@ with conn_col:
 with btn_col:
     st.write("")  # vertical alignment nudge
     if st.button("↺", help="Recheck connectivity", use_container_width=True):
+        get_client.clear()
         st.rerun()
 
 with st.sidebar.expander(":material/science: Demo controls", expanded=False):
@@ -742,6 +743,7 @@ with tab_predict:
             "RUL (days)": st.column_config.NumberColumn("RUL (days)", help="Remaining Useful Life — estimated days before major overhaul or replacement is needed"),
         },
     )
+    st.caption("\\* RUL — Remaining Useful Life: estimated days before the asset requires major overhaul or replacement, calculated from design lifespan, install date, and current risk score.")
 
     # Per-asset insight cards (Red + Yellow only)
     flagged = risk_df[risk_df["classification"].isin(["Red", "Yellow"])]
